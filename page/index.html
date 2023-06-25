@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <form action="/send-email" method="post">
+
+      <label for="from">from</label>
+      <input type="email" name="from" id="from">
+      <label for="to">to</label>
+      <input type="email" name="to" id="to">
+
+      <label for="subject">Subject</label>
+      <input name="subject" type="text" id="subject">
+      
+      <label for="message">Message:</label>
+      <textarea name="message" id="message"></textarea>
+
+      <input type="submit">Submit</button>
+    </form>
+</body>
+</html>
