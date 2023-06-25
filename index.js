@@ -12,11 +12,11 @@ var pass=process.env.AUTH_PASSWORD;
 app.set("port", port);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, "index.html")));
+app.use(express.static(path.join(__dirname, "page/index.html")));
 
 
 app.get("/", function (req, response) {
-    response.sendFile(path.join(__dirname, "index.html"));
+    response.sendFile(path.join(__dirname, "page/index.html"));
 }); 
 
 app.post("/send-email", function(req,response){
